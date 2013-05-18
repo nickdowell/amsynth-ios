@@ -90,10 +90,12 @@
 	if (tableView == self.banksTableView) {
 		self.synthHoster.currentBankIndex = [indexPath row];
 		[self.presetsTableView reloadData];
+		[self.presetsTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 	}
 	if (tableView == self.presetsTableView) {
 		self.synthHoster.currentPresetIndex = [indexPath row];
 	}
+	[tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
 }
 
 @end
@@ -187,7 +189,7 @@ static const int keyWidth = 55;
 		NSParameterAssert(key);
 		[_delegate keyboardNoteDown:_baseNote + key.noteOffset];
 		key.touch = touch;
-		[self setNeedsDisplay];
+		[self setNeedsDisplayInRect:key.rect];
 	}
 }
 
@@ -199,11 +201,12 @@ static const int keyWidth = 55;
 		if (newKey != key) {
 			[_delegate keyboardNoteUp:_baseNote + key.noteOffset];
 			key.touch = nil;
+			[self setNeedsDisplayInRect:key.rect];
 			if (newKey) {
 				[_delegate keyboardNoteDown:_baseNote + newKey.noteOffset];
 				newKey.touch = touch;
+				[self setNeedsDisplayInRect:newKey.rect];
 			}
-			[self setNeedsDisplay];
 		}
 	}
 }
@@ -214,7 +217,7 @@ static const int keyWidth = 55;
 		KeyboardViewKeyInfo *key = [self keyForTouch:touch];
 		[_delegate keyboardNoteUp:_baseNote + key.noteOffset];
 		key.touch = nil;
-		[self setNeedsDisplay];
+		[self setNeedsDisplayInRect:key.rect];
 	}
 }
 
@@ -224,13 +227,15 @@ static const int keyWidth = 55;
 		KeyboardViewKeyInfo *key = [self keyForTouch:touch];
 		[_delegate keyboardNoteUp:_baseNote + key.noteOffset];
 		key.touch = nil;
-		[self setNeedsDisplay];
+		[self setNeedsDisplayInRect:key.rect];
 	}
 }
 
 - (void)drawRect:(CGRect)rect
 {
 	for (KeyboardViewKeyInfo *key in _keys) {
+		if (CGRectIntersectsRect(key.rect, rect) == NO)
+			continue;
 		if (key.black) {
 			UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:key.rect cornerRadius:5];
 			[(key.touch ? [UIColor colorWithWhite:0.2 alpha:1] : [UIColor blackColor]) setFill];
