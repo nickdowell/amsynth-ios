@@ -100,52 +100,93 @@
 
 #pragma mark -
 
+@interface KeyboardViewKeyInfo : NSObject
+@property (assign, nonatomic) int noteOffset;
+@property (assign, nonatomic) CGRect rect;
+@property (assign, nonatomic) BOOL black;
+@property (weak, nonatomic) UITouch *touch;
+@end
+@implementation KeyboardViewKeyInfo
+@end
+
+
 static const int keyWidth = 55;
 
 @implementation KeyboardView
 {
-	NSMutableDictionary *_touchNotes;
+	NSArray *_keys;
+	int _baseNote;
 }
 
-- (int)noteForWhiteKeyAtIndex:(int)index
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-	int key = index % 7;
-	int oct = index / 7;
+	if ((self = [super initWithCoder:aDecoder])) {
+		_baseNote = 52;
 
-	int note = 52;
-	note = note + (oct * 12);
-	if (key < 3)
-		note = note + key * 2;
-	else
-		note = note + key * 2 - 1;
+		NSMutableArray *keys = [NSMutableArray array];
 
-	return note;
+		CGFloat offset = 33;
+		int noteOffset = 0;
+
+		int numWhites = CGRectGetWidth(self.bounds) / keyWidth;
+		for (int i=0; i<numWhites; i++) {
+			int noteOffset = ((i / 7) * 12) + ((i % 7) * 2) - ((i % 7) < 3 ? 0 : 1);
+			KeyboardViewKeyInfo *key = [[KeyboardViewKeyInfo alloc] init];
+			key.noteOffset = noteOffset;
+			key.rect = CGRectMake(i * 55, -5, 55, CGRectGetHeight(self.bounds) + 5);
+			[keys addObject:key];
+			noteOffset += 2;
+		}
+
+		noteOffset = 1;
+		for (int i=0; offset < CGRectGetWidth(self.bounds); i++) {
+			if ((i % 7) == 2) {
+				offset += 33;
+				noteOffset ++;
+				continue;
+			}
+			if ((i % 7) == 6) {
+				offset += 40;
+				noteOffset ++;
+				continue;
+			}
+			KeyboardViewKeyInfo *key = [[KeyboardViewKeyInfo alloc] init];
+			key.black = YES;
+			key.noteOffset = noteOffset;
+			key.rect = CGRectMake(offset, -5, 33, 180);
+			[keys addObject:key];
+			offset += ((i % 7) < 2) ? 66 : 60;
+			noteOffset += 2;
+		}
+
+		_keys = [keys copy];
+	}
+	return self;
 }
 
-- (int)noteForLocation:(CGPoint)location
+- (KeyboardViewKeyInfo *)keyForLocation:(CGPoint)location
 {
-	int key = (int)(location.x / keyWidth) % 7;
-	int oct = (int)(location.x / keyWidth) / 7;
+	for (KeyboardViewKeyInfo *key in [_keys reverseObjectEnumerator])
+		if (CGRectContainsPoint(key.rect, location))
+			return key;
+	return nil;
+}
 
-	int note = 52;
-	note = note + (oct * 12);
-	if (key < 3)
-		note = note + key * 2;
-	else
-		note = note + key * 2 - 1;
-
-	return note;
+- (KeyboardViewKeyInfo *)keyForTouch:(UITouch *)touch
+{
+	for (KeyboardViewKeyInfo *key in _keys)
+		if (key.touch == touch)
+			return key;
+	return nil;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	if (_touchNotes == nil)
-		_touchNotes = [NSMutableDictionary dictionary];
-
 	for (UITouch *touch in touches) {
-		int note = [self noteForLocation:[touch locationInView:self]];
-		[_touchNotes setObject:[NSNumber numberWithInt:note] forKey:[NSValue valueWithNonretainedObject:touch]];
-		[_delegate keyboardNoteDown:note];
+		KeyboardViewKeyInfo *key = [self keyForLocation:[touch locationInView:self]];
+		NSParameterAssert(key);
+		[_delegate keyboardNoteDown:_baseNote + key.noteOffset];
+		key.touch = touch;
 		[self setNeedsDisplay];
 	}
 }
@@ -153,12 +194,15 @@ static const int keyWidth = 55;
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	for (UITouch *touch in touches) {
-		int last = [[_touchNotes objectForKey:[NSValue valueWithNonretainedObject:touch]] intValue];
-		int note = [self noteForLocation:[touch locationInView:self]];
-		if (note != last) {
-			[_touchNotes setObject:[NSNumber numberWithInt:note] forKey:[NSValue valueWithNonretainedObject:touch]];
-			[_delegate keyboardNoteUp:last];
-			[_delegate keyboardNoteDown:note];
+		KeyboardViewKeyInfo *key = [self keyForTouch:touch];
+		KeyboardViewKeyInfo *newKey = [self keyForLocation:[touch locationInView:self]];
+		if (newKey != key) {
+			[_delegate keyboardNoteUp:_baseNote + key.noteOffset];
+			key.touch = nil;
+			if (newKey) {
+				[_delegate keyboardNoteDown:_baseNote + newKey.noteOffset];
+				newKey.touch = touch;
+			}
 			[self setNeedsDisplay];
 		}
 	}
@@ -167,9 +211,9 @@ static const int keyWidth = 55;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	for (UITouch *touch in touches) {
-		int note = [[_touchNotes objectForKey:[NSValue valueWithNonretainedObject:touch]] intValue];
-		[_touchNotes removeObjectForKey:[NSValue valueWithNonretainedObject:touch]];
-		[_delegate keyboardNoteUp:note];
+		KeyboardViewKeyInfo *key = [self keyForTouch:touch];
+		[_delegate keyboardNoteUp:_baseNote + key.noteOffset];
+		key.touch = nil;
 		[self setNeedsDisplay];
 	}
 }
@@ -177,45 +221,28 @@ static const int keyWidth = 55;
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	for (UITouch *touch in touches) {
-		int note = [[_touchNotes objectForKey:[NSValue valueWithNonretainedObject:touch]] intValue];
-		[_touchNotes removeObjectForKey:[NSValue valueWithNonretainedObject:touch]];
-		[_delegate keyboardNoteUp:note];
+		KeyboardViewKeyInfo *key = [self keyForTouch:touch];
+		[_delegate keyboardNoteUp:_baseNote + key.noteOffset];
+		key.touch = nil;
 		[self setNeedsDisplay];
 	}
 }
 
 - (void)drawRect:(CGRect)rect
 {
-	NSArray *notes = [_touchNotes allValues];
-
-	int numWhites = CGRectGetWidth(self.bounds) / keyWidth;
-	for (int i=0; i<numWhites; i++) {
-		BOOL isPressed = [notes containsObject:[NSNumber numberWithInt:[self noteForWhiteKeyAtIndex:i]]];
-		UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(i * 55, -5, 55, CGRectGetHeight(self.bounds) + 5) cornerRadius:5];
-		[[UIColor colorWithWhite:isPressed ? 0.7 : 1 alpha:1] setFill];
-		[[UIColor blackColor] setStroke];
-		path.lineWidth = 1;
-		[path fill];
-		[path stroke];
-	}
-
-	CGFloat offset = 33;
-	for (int i=0; offset < CGRectGetWidth(self.bounds); i++) {
-		if ((i % 7) == 2) {
-			offset += 33;
-			continue;
+	for (KeyboardViewKeyInfo *key in _keys) {
+		if (key.black) {
+			UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:key.rect cornerRadius:5];
+			[(key.touch ? [UIColor colorWithWhite:0.2 alpha:1] : [UIColor blackColor]) setFill];
+			[path fill];
+		} else {
+			UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:key.rect cornerRadius:5];
+			[[UIColor colorWithWhite:key.touch ? 0.7 : 1 alpha:1] setFill];
+			[[UIColor blackColor] setStroke];
+			path.lineWidth = 1;
+			[path fill];
+			[path stroke];
 		}
-		if ((i % 7) == 6) {
-			offset += 40;
-			continue;
-		}
-		UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(offset, -5, 33, 180) cornerRadius:5];
-		[[UIColor blackColor] setFill];
-		[path fill];
-		if ((i % 7) < 2)
-			offset += 66;
-		else
-			offset += 60;
 	}
 }
 
