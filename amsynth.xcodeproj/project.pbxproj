@@ -39,19 +39,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		010E40B61818748C00E75FC3 /* amsynth_factory.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = amsynth_factory.bank; sourceTree = "<group>"; };
-		010E40B71818748C00E75FC3 /* BriansBank01.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank01.amSynth.bank; sourceTree = "<group>"; };
-		010E40B81818748C00E75FC3 /* BriansBank02.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank02.amSynth.bank; sourceTree = "<group>"; };
-		010E40B91818748C00E75FC3 /* BriansBank03.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank03.amSynth.bank; sourceTree = "<group>"; };
-		010E40BA1818748C00E75FC3 /* BriansBank04.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank04.amSynth.bank; sourceTree = "<group>"; };
-		010E40BB1818748C00E75FC3 /* BriansBank05.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank05.amSynth.bank; sourceTree = "<group>"; };
-		010E40BC1818748C00E75FC3 /* BriansBank06.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank06.amSynth.bank; sourceTree = "<group>"; };
-		010E40BD1818748C00E75FC3 /* BriansBank07.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank07.amSynth.bank; sourceTree = "<group>"; };
-		010E40BE1818748C00E75FC3 /* BriansBank08.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank08.amSynth.bank; sourceTree = "<group>"; };
-		010E40BF1818748C00E75FC3 /* BriansBank09.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank09.amSynth.bank; sourceTree = "<group>"; };
-		010E40C01818748C00E75FC3 /* BriansBank10.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank10.amSynth.bank; sourceTree = "<group>"; };
-		010E40C11818748C00E75FC3 /* BriansBank11.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank11.amSynth.bank; sourceTree = "<group>"; };
-		010E40C21818748C00E75FC3 /* BriansBank12.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank12.amSynth.bank; sourceTree = "<group>"; };
 		010E40EB1818748C00E75FC3 /* amsynth_dssi_gui.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = amsynth_dssi_gui.c; sourceTree = "<group>"; };
 		010E40EC1818748C00E75FC3 /* amsynth_lv2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = amsynth_lv2.cpp; sourceTree = "<group>"; };
 		010E40ED1818748C00E75FC3 /* amsynth_lv2_ui_gtk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = amsynth_lv2_ui_gtk.c; sourceTree = "<group>"; };
@@ -173,7 +160,7 @@
 		010E417E1818748C00E75FC3 /* Synth--.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Synth--.h"; sourceTree = "<group>"; };
 		010E417F1818748C00E75FC3 /* VoiceBoard.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceBoard.cc; sourceTree = "<group>"; };
 		010E41801818748C00E75FC3 /* VoiceBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceBoard.h; sourceTree = "<group>"; };
-		011B945717479CA000ABA17F /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = banks; path = "../../amsynth-osx/amsynth/banks"; sourceTree = "<group>"; };
+		011B945717479CA000ABA17F /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = banks; path = "../../../amsynth-osx/amsynth/banks"; sourceTree = "<group>"; };
 		01ED966D174783D9007DA00F /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ED9670174783D9007DA00F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		01ED9672174783D9007DA00F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -222,30 +209,10 @@
 		010E409E1818748C00E75FC3 /* amsynth */ = {
 			isa = PBXGroup;
 			children = (
-				010E40B51818748C00E75FC3 /* banks */,
+				011B945717479CA000ABA17F /* banks */,
 				010E40EA1818748C00E75FC3 /* src */,
 			);
 			path = amsynth;
-			sourceTree = "<group>";
-		};
-		010E40B51818748C00E75FC3 /* banks */ = {
-			isa = PBXGroup;
-			children = (
-				010E40B61818748C00E75FC3 /* amsynth_factory.bank */,
-				010E40B71818748C00E75FC3 /* BriansBank01.amSynth.bank */,
-				010E40B81818748C00E75FC3 /* BriansBank02.amSynth.bank */,
-				010E40B91818748C00E75FC3 /* BriansBank03.amSynth.bank */,
-				010E40BA1818748C00E75FC3 /* BriansBank04.amSynth.bank */,
-				010E40BB1818748C00E75FC3 /* BriansBank05.amSynth.bank */,
-				010E40BC1818748C00E75FC3 /* BriansBank06.amSynth.bank */,
-				010E40BD1818748C00E75FC3 /* BriansBank07.amSynth.bank */,
-				010E40BE1818748C00E75FC3 /* BriansBank08.amSynth.bank */,
-				010E40BF1818748C00E75FC3 /* BriansBank09.amSynth.bank */,
-				010E40C01818748C00E75FC3 /* BriansBank10.amSynth.bank */,
-				010E40C11818748C00E75FC3 /* BriansBank11.amSynth.bank */,
-				010E40C21818748C00E75FC3 /* BriansBank12.amSynth.bank */,
-			);
-			path = banks;
 			sourceTree = "<group>";
 		};
 		010E40EA1818748C00E75FC3 /* src */ = {
@@ -655,7 +622,6 @@
 		01ED9677174783D9007DA00F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				011B945717479CA000ABA17F /* banks */,
 				01ED9678174783D9007DA00F /* amsynth-Info.plist */,
 				01ED967E174783D9007DA00F /* amsynth-Prefix.pch */,
 				01ED9686174783D9007DA00F /* Default-568h@2x.png */,
