@@ -27,6 +27,10 @@
 
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 	navigationController.navigationBar.barStyle = UIBarStyleBlack;
+#ifdef __IPHONE_7_0
+	if ([navigationController respondsToSelector:@selector(setTranslucent:)])
+		navigationController.navigationBar.translucent = NO;
+#endif
 
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.backgroundColor = [UIColor blackColor];

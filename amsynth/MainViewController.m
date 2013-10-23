@@ -48,6 +48,8 @@
 {
 	[super viewDidLoad];
 
+	self.title = @"amsynth";
+
 	[self.banksTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:self.synthHoster.currentBankIndex inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
 	[self.presetsTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:self.synthHoster.currentPresetIndex inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
