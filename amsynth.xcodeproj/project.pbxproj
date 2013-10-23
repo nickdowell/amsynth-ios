@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010E4187181874CB00E75FC3 /* PresetController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416D1818748C00E75FC3 /* PresetController.cc */; };
+		010E41881818754200E75FC3 /* allpass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41091818748C00E75FC3 /* allpass.cpp */; };
+		010E41891818754200E75FC3 /* comb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E410B1818748C00E75FC3 /* comb.cpp */; };
+		010E418A1818754200E75FC3 /* Distortion.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E410F1818748C00E75FC3 /* Distortion.cc */; };
+		010E418B1818754200E75FC3 /* revmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41131818748C00E75FC3 /* revmodel.cpp */; };
+		010E418C1818754200E75FC3 /* SoftLimiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41151818748C00E75FC3 /* SoftLimiter.cc */; };
+		010E418D1818754900E75FC3 /* VoiceAllocationUnit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41731818748C00E75FC3 /* VoiceAllocationUnit.cc */; };
+		010E418E1818754D00E75FC3 /* ADSR.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41761818748C00E75FC3 /* ADSR.cc */; };
+		010E418F1818754D00E75FC3 /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41791818748C00E75FC3 /* LowPassFilter.cc */; };
+		010E41901818754D00E75FC3 /* Oscillator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417C1818748C00E75FC3 /* Oscillator.cc */; };
+		010E41911818754D00E75FC3 /* VoiceBoard.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417F1818748C00E75FC3 /* VoiceBoard.cc */; };
+		010E41921818755700E75FC3 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
+		010E41931818755700E75FC3 /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416B1818748C00E75FC3 /* Preset.cc */; };
+		010E41941818756300E75FC3 /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41701818748C00E75FC3 /* TuningMap.cc */; };
 		011B945817479CA000ABA17F /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 011B945717479CA000ABA17F /* banks */; };
 		01ED9671174783D9007DA00F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9670174783D9007DA00F /* UIKit.framework */; };
 		01ED9673174783D9007DA00F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9672174783D9007DA00F /* Foundation.framework */; };
@@ -19,28 +33,146 @@
 		01ED9687174783D9007DA00F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED9686174783D9007DA00F /* Default-568h@2x.png */; };
 		01ED97B417478588007DA00F /* SynthHoster.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97B317478588007DA00F /* SynthHoster.mm */; };
 		01ED97B6174785EC007DA00F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED97B5174785EC007DA00F /* AudioToolbox.framework */; };
-		01ED97B717478941007DA00F /* Config.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED96DB174784C2007DA00F /* Config.cc */; };
-		01ED97B817478941007DA00F /* allpass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01ED970E174784C2007DA00F /* allpass.cpp */; };
-		01ED97B917478941007DA00F /* comb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9711174784C2007DA00F /* comb.cpp */; };
-		01ED97BA17478941007DA00F /* Distortion.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9716174784C2007DA00F /* Distortion.cc */; };
-		01ED97BB17478941007DA00F /* MidiController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED978C174784C2007DA00F /* MidiController.cc */; };
-		01ED97BC17478941007DA00F /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED978E174784C2007DA00F /* Parameter.cc */; };
-		01ED97BD17478941007DA00F /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9790174784C2007DA00F /* Preset.cc */; };
-		01ED97BE17478941007DA00F /* PresetController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9792174784C2007DA00F /* PresetController.cc */; };
-		01ED97BF17478941007DA00F /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9795174784C2007DA00F /* TuningMap.cc */; };
-		01ED97C017478941007DA00F /* VoiceAllocationUnit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9798174784C2007DA00F /* VoiceAllocationUnit.cc */; };
-		01ED97C117478941007DA00F /* ADSR.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97A0174784C2007DA00F /* ADSR.cc */; };
-		01ED97C217478941007DA00F /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97A5174784C2007DA00F /* LowPassFilter.cc */; };
-		01ED97C317478941007DA00F /* Oscillator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97AB174784C2007DA00F /* Oscillator.cc */; };
-		01ED97C417478941007DA00F /* VoiceBoard.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97AF174784C2007DA00F /* VoiceBoard.cc */; };
-		01ED97C51747894F007DA00F /* revmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01ED971E174784C2007DA00F /* revmodel.cpp */; };
-		01ED97C61747894F007DA00F /* SoftLimiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9721174784C2007DA00F /* SoftLimiter.cc */; };
 		01ED97CC17478D0C007DA00F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97CA17478D0C007DA00F /* MainViewController.m */; };
 		01ED97CD17478D0C007DA00F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97CB17478D0C007DA00F /* MainViewController.xib */; };
 		01ED97D5174792A8007DA00F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97D4174792A8007DA00F /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010E40B61818748C00E75FC3 /* amsynth_factory.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = amsynth_factory.bank; sourceTree = "<group>"; };
+		010E40B71818748C00E75FC3 /* BriansBank01.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank01.amSynth.bank; sourceTree = "<group>"; };
+		010E40B81818748C00E75FC3 /* BriansBank02.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank02.amSynth.bank; sourceTree = "<group>"; };
+		010E40B91818748C00E75FC3 /* BriansBank03.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank03.amSynth.bank; sourceTree = "<group>"; };
+		010E40BA1818748C00E75FC3 /* BriansBank04.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank04.amSynth.bank; sourceTree = "<group>"; };
+		010E40BB1818748C00E75FC3 /* BriansBank05.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank05.amSynth.bank; sourceTree = "<group>"; };
+		010E40BC1818748C00E75FC3 /* BriansBank06.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank06.amSynth.bank; sourceTree = "<group>"; };
+		010E40BD1818748C00E75FC3 /* BriansBank07.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank07.amSynth.bank; sourceTree = "<group>"; };
+		010E40BE1818748C00E75FC3 /* BriansBank08.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank08.amSynth.bank; sourceTree = "<group>"; };
+		010E40BF1818748C00E75FC3 /* BriansBank09.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank09.amSynth.bank; sourceTree = "<group>"; };
+		010E40C01818748C00E75FC3 /* BriansBank10.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank10.amSynth.bank; sourceTree = "<group>"; };
+		010E40C11818748C00E75FC3 /* BriansBank11.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank11.amSynth.bank; sourceTree = "<group>"; };
+		010E40C21818748C00E75FC3 /* BriansBank12.amSynth.bank */ = {isa = PBXFileReference; lastKnownFileType = text; path = BriansBank12.amSynth.bank; sourceTree = "<group>"; };
+		010E40EB1818748C00E75FC3 /* amsynth_dssi_gui.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = amsynth_dssi_gui.c; sourceTree = "<group>"; };
+		010E40EC1818748C00E75FC3 /* amsynth_lv2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = amsynth_lv2.cpp; sourceTree = "<group>"; };
+		010E40ED1818748C00E75FC3 /* amsynth_lv2_ui_gtk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = amsynth_lv2_ui_gtk.c; sourceTree = "<group>"; };
+		010E40EE1818748C00E75FC3 /* AudioOutput.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioOutput.cc; sourceTree = "<group>"; };
+		010E40EF1818748C00E75FC3 /* AudioOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		010E40F01818748C00E75FC3 /* Config.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cc; sourceTree = "<group>"; };
+		010E40F11818748C00E75FC3 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		010E40F21818748C00E75FC3 /* controls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = controls.h; sourceTree = "<group>"; };
+		010E40F41818748C00E75FC3 /* ALSAAudioDriver.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ALSAAudioDriver.cc; sourceTree = "<group>"; };
+		010E40F51818748C00E75FC3 /* ALSAAudioDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSAAudioDriver.h; sourceTree = "<group>"; };
+		010E40F61818748C00E75FC3 /* ALSAMidiDriver.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ALSAMidiDriver.cc; sourceTree = "<group>"; };
+		010E40F71818748C00E75FC3 /* ALSAMidiDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSAMidiDriver.h; sourceTree = "<group>"; };
+		010E40F81818748C00E75FC3 /* ALSAmmapAudioDriver.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ALSAmmapAudioDriver.cc; sourceTree = "<group>"; };
+		010E40F91818748C00E75FC3 /* ALSAmmapAudioDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALSAmmapAudioDriver.h; sourceTree = "<group>"; };
+		010E40FA1818748C00E75FC3 /* AudioDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioDriver.h; sourceTree = "<group>"; };
+		010E40FB1818748C00E75FC3 /* AudioInterface.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioInterface.cc; sourceTree = "<group>"; };
+		010E40FC1818748C00E75FC3 /* AudioInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioInterface.h; sourceTree = "<group>"; };
+		010E40FD1818748C00E75FC3 /* CoreAudio.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoreAudio.cc; sourceTree = "<group>"; };
+		010E40FE1818748C00E75FC3 /* CoreAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAudio.h; sourceTree = "<group>"; };
+		010E40FF1818748C00E75FC3 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		010E41001818748C00E75FC3 /* MidiDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiDriver.h; sourceTree = "<group>"; };
+		010E41011818748C00E75FC3 /* MidiInterface.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiInterface.cc; sourceTree = "<group>"; };
+		010E41021818748C00E75FC3 /* MidiInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiInterface.h; sourceTree = "<group>"; };
+		010E41031818748C00E75FC3 /* OSSAudioDriver.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OSSAudioDriver.cc; sourceTree = "<group>"; };
+		010E41041818748C00E75FC3 /* OSSAudioDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSAudioDriver.h; sourceTree = "<group>"; };
+		010E41051818748C00E75FC3 /* OSSMidiDriver.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OSSMidiDriver.cc; sourceTree = "<group>"; };
+		010E41061818748C00E75FC3 /* OSSMidiDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSMidiDriver.h; sourceTree = "<group>"; };
+		010E41071818748C00E75FC3 /* dssi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dssi.cpp; sourceTree = "<group>"; };
+		010E41091818748C00E75FC3 /* allpass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = allpass.cpp; sourceTree = "<group>"; };
+		010E410A1818748C00E75FC3 /* allpass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = allpass.hpp; sourceTree = "<group>"; };
+		010E410B1818748C00E75FC3 /* comb.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = comb.cpp; sourceTree = "<group>"; };
+		010E410C1818748C00E75FC3 /* comb.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = comb.hpp; sourceTree = "<group>"; };
+		010E410D1818748C00E75FC3 /* denormal_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = denormal_test.cpp; sourceTree = "<group>"; };
+		010E410E1818748C00E75FC3 /* denormals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = denormals.h; sourceTree = "<group>"; };
+		010E410F1818748C00E75FC3 /* Distortion.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Distortion.cc; sourceTree = "<group>"; };
+		010E41101818748C00E75FC3 /* Distortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Distortion.h; sourceTree = "<group>"; };
+		010E41111818748C00E75FC3 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		010E41121818748C00E75FC3 /* reverb_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverb_test.cpp; sourceTree = "<group>"; };
+		010E41131818748C00E75FC3 /* revmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = revmodel.cpp; sourceTree = "<group>"; };
+		010E41141818748C00E75FC3 /* revmodel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = revmodel.hpp; sourceTree = "<group>"; };
+		010E41151818748C00E75FC3 /* SoftLimiter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoftLimiter.cc; sourceTree = "<group>"; };
+		010E41161818748C00E75FC3 /* SoftLimiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftLimiter.h; sourceTree = "<group>"; };
+		010E41171818748C00E75FC3 /* tuning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tuning.h; sourceTree = "<group>"; };
+		010E41191818748C00E75FC3 /* amsynth_logo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = amsynth_logo.h; sourceTree = "<group>"; };
+		010E411A1818748C00E75FC3 /* bitmap_button.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bitmap_button.c; sourceTree = "<group>"; };
+		010E411B1818748C00E75FC3 /* bitmap_button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitmap_button.h; sourceTree = "<group>"; };
+		010E411C1818748C00E75FC3 /* bitmap_knob.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bitmap_knob.c; sourceTree = "<group>"; };
+		010E411D1818748C00E75FC3 /* bitmap_knob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitmap_knob.h; sourceTree = "<group>"; };
+		010E411E1818748C00E75FC3 /* bitmap_popup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bitmap_popup.c; sourceTree = "<group>"; };
+		010E411F1818748C00E75FC3 /* bitmap_popup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitmap_popup.h; sourceTree = "<group>"; };
+		010E41201818748C00E75FC3 /* ConfigDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigDialog.cpp; sourceTree = "<group>"; };
+		010E41211818748C00E75FC3 /* ConfigDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigDialog.h; sourceTree = "<group>"; };
+		010E41221818748C00E75FC3 /* controllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = controllers.h; sourceTree = "<group>"; };
+		010E41231818748C00E75FC3 /* editor_pane.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = editor_pane.c; sourceTree = "<group>"; };
+		010E41241818748C00E75FC3 /* editor_pane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editor_pane.h; sourceTree = "<group>"; };
+		010E41251818748C00E75FC3 /* GUI.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GUI.cc; sourceTree = "<group>"; };
+		010E41261818748C00E75FC3 /* GUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUI.h; sourceTree = "<group>"; };
+		010E41271818748C00E75FC3 /* gui_main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_main.cc; sourceTree = "<group>"; };
+		010E41281818748C00E75FC3 /* gui_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gui_main.h; sourceTree = "<group>"; };
+		010E41291818748C00E75FC3 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		010E412A1818748C00E75FC3 /* MIDILearnDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MIDILearnDialog.cpp; sourceTree = "<group>"; };
+		010E412B1818748C00E75FC3 /* MIDILearnDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDILearnDialog.h; sourceTree = "<group>"; };
+		010E412C1818748C00E75FC3 /* PresetControllerView.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PresetControllerView.cc; sourceTree = "<group>"; };
+		010E412D1818748C00E75FC3 /* PresetControllerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresetControllerView.h; sourceTree = "<group>"; };
+		010E412E1818748C00E75FC3 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		010E412F1818748C00E75FC3 /* JackOutput.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JackOutput.cc; sourceTree = "<group>"; };
+		010E41301818748C00E75FC3 /* JackOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JackOutput.h; sourceTree = "<group>"; };
+		010E41311818748C00E75FC3 /* lash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lash.c; sourceTree = "<group>"; };
+		010E41321818748C00E75FC3 /* lash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lash.h; sourceTree = "<group>"; };
+		010E41381818748C00E75FC3 /* atom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atom.h; sourceTree = "<group>"; };
+		010E41391818748C00E75FC3 /* forge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forge.h; sourceTree = "<group>"; };
+		010E413A1818748C00E75FC3 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		010E413C1818748C00E75FC3 /* data-access.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "data-access.h"; sourceTree = "<group>"; };
+		010E413E1818748C00E75FC3 /* dynmanifest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynmanifest.h; sourceTree = "<group>"; };
+		010E41401818748C00E75FC3 /* event-helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "event-helpers.h"; sourceTree = "<group>"; };
+		010E41411818748C00E75FC3 /* event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		010E41431818748C00E75FC3 /* instance-access.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "instance-access.h"; sourceTree = "<group>"; };
+		010E41451818748C00E75FC3 /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		010E41471818748C00E75FC3 /* midi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = midi.h; sourceTree = "<group>"; };
+		010E41491818748C00E75FC3 /* patch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = patch.h; sourceTree = "<group>"; };
+		010E414B1818748C00E75FC3 /* port-groups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "port-groups.h"; sourceTree = "<group>"; };
+		010E414D1818748C00E75FC3 /* port-props.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "port-props.h"; sourceTree = "<group>"; };
+		010E414F1818748C00E75FC3 /* presets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presets.h; sourceTree = "<group>"; };
+		010E41511818748C00E75FC3 /* resize-port.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "resize-port.h"; sourceTree = "<group>"; };
+		010E41531818748C00E75FC3 /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		010E41551818748C00E75FC3 /* time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
+		010E41571818748C00E75FC3 /* uri-map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uri-map.h"; sourceTree = "<group>"; };
+		010E41591818748C00E75FC3 /* urid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = urid.h; sourceTree = "<group>"; };
+		010E415B1818748C00E75FC3 /* worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = worker.h; sourceTree = "<group>"; };
+		010E415E1818748C00E75FC3 /* ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		010E41601818748C00E75FC3 /* units.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = units.h; sourceTree = "<group>"; };
+		010E41621818748C00E75FC3 /* lv2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lv2.h; sourceTree = "<group>"; };
+		010E41631818748C00E75FC3 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		010E41641818748C00E75FC3 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		010E41651818748C00E75FC3 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		010E41661818748C00E75FC3 /* midi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = midi.h; sourceTree = "<group>"; };
+		010E41671818748C00E75FC3 /* MidiController.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiController.cc; sourceTree = "<group>"; };
+		010E41681818748C00E75FC3 /* MidiController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiController.h; sourceTree = "<group>"; };
+		010E41691818748C00E75FC3 /* Parameter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Parameter.cc; sourceTree = "<group>"; };
+		010E416A1818748C00E75FC3 /* Parameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parameter.h; sourceTree = "<group>"; };
+		010E416B1818748C00E75FC3 /* Preset.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Preset.cc; sourceTree = "<group>"; };
+		010E416C1818748C00E75FC3 /* Preset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Preset.h; sourceTree = "<group>"; };
+		010E416D1818748C00E75FC3 /* PresetController.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PresetController.cc; sourceTree = "<group>"; };
+		010E416E1818748C00E75FC3 /* PresetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresetController.h; sourceTree = "<group>"; };
+		010E416F1818748C00E75FC3 /* Thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		010E41701818748C00E75FC3 /* TuningMap.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TuningMap.cc; sourceTree = "<group>"; };
+		010E41711818748C00E75FC3 /* TuningMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuningMap.h; sourceTree = "<group>"; };
+		010E41721818748C00E75FC3 /* UpdateListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateListener.h; sourceTree = "<group>"; };
+		010E41731818748C00E75FC3 /* VoiceAllocationUnit.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceAllocationUnit.cc; sourceTree = "<group>"; };
+		010E41741818748C00E75FC3 /* VoiceAllocationUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceAllocationUnit.h; sourceTree = "<group>"; };
+		010E41761818748C00E75FC3 /* ADSR.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ADSR.cc; sourceTree = "<group>"; };
+		010E41771818748C00E75FC3 /* ADSR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADSR.h; sourceTree = "<group>"; };
+		010E41781818748C00E75FC3 /* config.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		010E41791818748C00E75FC3 /* LowPassFilter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowPassFilter.cc; sourceTree = "<group>"; };
+		010E417A1818748C00E75FC3 /* LowPassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowPassFilter.h; sourceTree = "<group>"; };
+		010E417B1818748C00E75FC3 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		010E417C1818748C00E75FC3 /* Oscillator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cc; sourceTree = "<group>"; };
+		010E417D1818748C00E75FC3 /* Oscillator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
+		010E417E1818748C00E75FC3 /* Synth--.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Synth--.h"; sourceTree = "<group>"; };
+		010E417F1818748C00E75FC3 /* VoiceBoard.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceBoard.cc; sourceTree = "<group>"; };
+		010E41801818748C00E75FC3 /* VoiceBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceBoard.h; sourceTree = "<group>"; };
 		011B945717479CA000ABA17F /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = banks; path = "../../amsynth-osx/amsynth/banks"; sourceTree = "<group>"; };
 		01ED966D174783D9007DA00F /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ED9670174783D9007DA00F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -55,46 +187,6 @@
 		01ED9682174783D9007DA00F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		01ED9684174783D9007DA00F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		01ED9686174783D9007DA00F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		01ED96DB174784C2007DA00F /* Config.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Config.cc; sourceTree = "<group>"; };
-		01ED96DC174784C2007DA00F /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		01ED96DD174784C2007DA00F /* controls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = controls.h; sourceTree = "<group>"; };
-		01ED970E174784C2007DA00F /* allpass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = allpass.cpp; sourceTree = "<group>"; };
-		01ED970F174784C2007DA00F /* allpass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = allpass.hpp; sourceTree = "<group>"; };
-		01ED9711174784C2007DA00F /* comb.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = comb.cpp; sourceTree = "<group>"; };
-		01ED9712174784C2007DA00F /* comb.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = comb.hpp; sourceTree = "<group>"; };
-		01ED9714174784C2007DA00F /* denormal_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = denormal_test.cpp; sourceTree = "<group>"; };
-		01ED9715174784C2007DA00F /* denormals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = denormals.h; sourceTree = "<group>"; };
-		01ED9716174784C2007DA00F /* Distortion.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Distortion.cc; sourceTree = "<group>"; };
-		01ED9717174784C2007DA00F /* Distortion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Distortion.h; sourceTree = "<group>"; };
-		01ED971D174784C2007DA00F /* reverb_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverb_test.cpp; sourceTree = "<group>"; };
-		01ED971E174784C2007DA00F /* revmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = revmodel.cpp; sourceTree = "<group>"; };
-		01ED971F174784C2007DA00F /* revmodel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = revmodel.hpp; sourceTree = "<group>"; };
-		01ED9721174784C2007DA00F /* SoftLimiter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoftLimiter.cc; sourceTree = "<group>"; };
-		01ED9722174784C2007DA00F /* SoftLimiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftLimiter.h; sourceTree = "<group>"; };
-		01ED9724174784C2007DA00F /* tuning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tuning.h; sourceTree = "<group>"; };
-		01ED978B174784C2007DA00F /* midi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = midi.h; sourceTree = "<group>"; };
-		01ED978C174784C2007DA00F /* MidiController.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MidiController.cc; sourceTree = "<group>"; };
-		01ED978D174784C2007DA00F /* MidiController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiController.h; sourceTree = "<group>"; };
-		01ED978E174784C2007DA00F /* Parameter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Parameter.cc; sourceTree = "<group>"; };
-		01ED978F174784C2007DA00F /* Parameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parameter.h; sourceTree = "<group>"; };
-		01ED9790174784C2007DA00F /* Preset.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Preset.cc; sourceTree = "<group>"; };
-		01ED9791174784C2007DA00F /* Preset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Preset.h; sourceTree = "<group>"; };
-		01ED9792174784C2007DA00F /* PresetController.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PresetController.cc; sourceTree = "<group>"; };
-		01ED9793174784C2007DA00F /* PresetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresetController.h; sourceTree = "<group>"; };
-		01ED9795174784C2007DA00F /* TuningMap.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TuningMap.cc; sourceTree = "<group>"; };
-		01ED9796174784C2007DA00F /* TuningMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuningMap.h; sourceTree = "<group>"; };
-		01ED9797174784C2007DA00F /* UpdateListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateListener.h; sourceTree = "<group>"; };
-		01ED9798174784C2007DA00F /* VoiceAllocationUnit.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceAllocationUnit.cc; sourceTree = "<group>"; };
-		01ED9799174784C2007DA00F /* VoiceAllocationUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceAllocationUnit.h; sourceTree = "<group>"; };
-		01ED97A0174784C2007DA00F /* ADSR.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ADSR.cc; sourceTree = "<group>"; };
-		01ED97A1174784C2007DA00F /* ADSR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADSR.h; sourceTree = "<group>"; };
-		01ED97A5174784C2007DA00F /* LowPassFilter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LowPassFilter.cc; sourceTree = "<group>"; };
-		01ED97A6174784C2007DA00F /* LowPassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowPassFilter.h; sourceTree = "<group>"; };
-		01ED97AB174784C2007DA00F /* Oscillator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cc; sourceTree = "<group>"; };
-		01ED97AC174784C2007DA00F /* Oscillator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
-		01ED97AE174784C2007DA00F /* Synth--.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Synth--.h"; sourceTree = "<group>"; };
-		01ED97AF174784C2007DA00F /* VoiceBoard.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceBoard.cc; sourceTree = "<group>"; };
-		01ED97B0174784C2007DA00F /* VoiceBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceBoard.h; sourceTree = "<group>"; };
 		01ED97B217478588007DA00F /* SynthHoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthHoster.h; sourceTree = "<group>"; };
 		01ED97B317478588007DA00F /* SynthHoster.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SynthHoster.mm; sourceTree = "<group>"; };
 		01ED97B5174785EC007DA00F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -119,10 +211,408 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010E409D1818748C00E75FC3 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				010E409E1818748C00E75FC3 /* amsynth */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		010E409E1818748C00E75FC3 /* amsynth */ = {
+			isa = PBXGroup;
+			children = (
+				010E40B51818748C00E75FC3 /* banks */,
+				010E40EA1818748C00E75FC3 /* src */,
+			);
+			path = amsynth;
+			sourceTree = "<group>";
+		};
+		010E40B51818748C00E75FC3 /* banks */ = {
+			isa = PBXGroup;
+			children = (
+				010E40B61818748C00E75FC3 /* amsynth_factory.bank */,
+				010E40B71818748C00E75FC3 /* BriansBank01.amSynth.bank */,
+				010E40B81818748C00E75FC3 /* BriansBank02.amSynth.bank */,
+				010E40B91818748C00E75FC3 /* BriansBank03.amSynth.bank */,
+				010E40BA1818748C00E75FC3 /* BriansBank04.amSynth.bank */,
+				010E40BB1818748C00E75FC3 /* BriansBank05.amSynth.bank */,
+				010E40BC1818748C00E75FC3 /* BriansBank06.amSynth.bank */,
+				010E40BD1818748C00E75FC3 /* BriansBank07.amSynth.bank */,
+				010E40BE1818748C00E75FC3 /* BriansBank08.amSynth.bank */,
+				010E40BF1818748C00E75FC3 /* BriansBank09.amSynth.bank */,
+				010E40C01818748C00E75FC3 /* BriansBank10.amSynth.bank */,
+				010E40C11818748C00E75FC3 /* BriansBank11.amSynth.bank */,
+				010E40C21818748C00E75FC3 /* BriansBank12.amSynth.bank */,
+			);
+			path = banks;
+			sourceTree = "<group>";
+		};
+		010E40EA1818748C00E75FC3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				010E40EB1818748C00E75FC3 /* amsynth_dssi_gui.c */,
+				010E40EC1818748C00E75FC3 /* amsynth_lv2.cpp */,
+				010E40ED1818748C00E75FC3 /* amsynth_lv2_ui_gtk.c */,
+				010E40EE1818748C00E75FC3 /* AudioOutput.cc */,
+				010E40EF1818748C00E75FC3 /* AudioOutput.h */,
+				010E40F01818748C00E75FC3 /* Config.cc */,
+				010E40F11818748C00E75FC3 /* Config.h */,
+				010E40F21818748C00E75FC3 /* controls.h */,
+				010E40F31818748C00E75FC3 /* drivers */,
+				010E41071818748C00E75FC3 /* dssi.cpp */,
+				010E41081818748C00E75FC3 /* Effects */,
+				010E41181818748C00E75FC3 /* GUI */,
+				010E412F1818748C00E75FC3 /* JackOutput.cc */,
+				010E41301818748C00E75FC3 /* JackOutput.h */,
+				010E41311818748C00E75FC3 /* lash.c */,
+				010E41321818748C00E75FC3 /* lash.h */,
+				010E41331818748C00E75FC3 /* lv2 */,
+				010E41631818748C00E75FC3 /* main.cc */,
+				010E41641818748C00E75FC3 /* main.h */,
+				010E41651818748C00E75FC3 /* Makefile.am */,
+				010E41661818748C00E75FC3 /* midi.h */,
+				010E41671818748C00E75FC3 /* MidiController.cc */,
+				010E41681818748C00E75FC3 /* MidiController.h */,
+				010E41691818748C00E75FC3 /* Parameter.cc */,
+				010E416A1818748C00E75FC3 /* Parameter.h */,
+				010E416B1818748C00E75FC3 /* Preset.cc */,
+				010E416C1818748C00E75FC3 /* Preset.h */,
+				010E416D1818748C00E75FC3 /* PresetController.cc */,
+				010E416E1818748C00E75FC3 /* PresetController.h */,
+				010E416F1818748C00E75FC3 /* Thread.h */,
+				010E41701818748C00E75FC3 /* TuningMap.cc */,
+				010E41711818748C00E75FC3 /* TuningMap.h */,
+				010E41721818748C00E75FC3 /* UpdateListener.h */,
+				010E41731818748C00E75FC3 /* VoiceAllocationUnit.cc */,
+				010E41741818748C00E75FC3 /* VoiceAllocationUnit.h */,
+				010E41751818748C00E75FC3 /* VoiceBoard */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		010E40F31818748C00E75FC3 /* drivers */ = {
+			isa = PBXGroup;
+			children = (
+				010E40F41818748C00E75FC3 /* ALSAAudioDriver.cc */,
+				010E40F51818748C00E75FC3 /* ALSAAudioDriver.h */,
+				010E40F61818748C00E75FC3 /* ALSAMidiDriver.cc */,
+				010E40F71818748C00E75FC3 /* ALSAMidiDriver.h */,
+				010E40F81818748C00E75FC3 /* ALSAmmapAudioDriver.cc */,
+				010E40F91818748C00E75FC3 /* ALSAmmapAudioDriver.h */,
+				010E40FA1818748C00E75FC3 /* AudioDriver.h */,
+				010E40FB1818748C00E75FC3 /* AudioInterface.cc */,
+				010E40FC1818748C00E75FC3 /* AudioInterface.h */,
+				010E40FD1818748C00E75FC3 /* CoreAudio.cc */,
+				010E40FE1818748C00E75FC3 /* CoreAudio.h */,
+				010E40FF1818748C00E75FC3 /* Makefile.am */,
+				010E41001818748C00E75FC3 /* MidiDriver.h */,
+				010E41011818748C00E75FC3 /* MidiInterface.cc */,
+				010E41021818748C00E75FC3 /* MidiInterface.h */,
+				010E41031818748C00E75FC3 /* OSSAudioDriver.cc */,
+				010E41041818748C00E75FC3 /* OSSAudioDriver.h */,
+				010E41051818748C00E75FC3 /* OSSMidiDriver.cc */,
+				010E41061818748C00E75FC3 /* OSSMidiDriver.h */,
+			);
+			path = drivers;
+			sourceTree = "<group>";
+		};
+		010E41081818748C00E75FC3 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				010E41091818748C00E75FC3 /* allpass.cpp */,
+				010E410A1818748C00E75FC3 /* allpass.hpp */,
+				010E410B1818748C00E75FC3 /* comb.cpp */,
+				010E410C1818748C00E75FC3 /* comb.hpp */,
+				010E410D1818748C00E75FC3 /* denormal_test.cpp */,
+				010E410E1818748C00E75FC3 /* denormals.h */,
+				010E410F1818748C00E75FC3 /* Distortion.cc */,
+				010E41101818748C00E75FC3 /* Distortion.h */,
+				010E41111818748C00E75FC3 /* Makefile.am */,
+				010E41121818748C00E75FC3 /* reverb_test.cpp */,
+				010E41131818748C00E75FC3 /* revmodel.cpp */,
+				010E41141818748C00E75FC3 /* revmodel.hpp */,
+				010E41151818748C00E75FC3 /* SoftLimiter.cc */,
+				010E41161818748C00E75FC3 /* SoftLimiter.h */,
+				010E41171818748C00E75FC3 /* tuning.h */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		010E41181818748C00E75FC3 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				010E41191818748C00E75FC3 /* amsynth_logo.h */,
+				010E411A1818748C00E75FC3 /* bitmap_button.c */,
+				010E411B1818748C00E75FC3 /* bitmap_button.h */,
+				010E411C1818748C00E75FC3 /* bitmap_knob.c */,
+				010E411D1818748C00E75FC3 /* bitmap_knob.h */,
+				010E411E1818748C00E75FC3 /* bitmap_popup.c */,
+				010E411F1818748C00E75FC3 /* bitmap_popup.h */,
+				010E41201818748C00E75FC3 /* ConfigDialog.cpp */,
+				010E41211818748C00E75FC3 /* ConfigDialog.h */,
+				010E41221818748C00E75FC3 /* controllers.h */,
+				010E41231818748C00E75FC3 /* editor_pane.c */,
+				010E41241818748C00E75FC3 /* editor_pane.h */,
+				010E41251818748C00E75FC3 /* GUI.cc */,
+				010E41261818748C00E75FC3 /* GUI.h */,
+				010E41271818748C00E75FC3 /* gui_main.cc */,
+				010E41281818748C00E75FC3 /* gui_main.h */,
+				010E41291818748C00E75FC3 /* Makefile.am */,
+				010E412A1818748C00E75FC3 /* MIDILearnDialog.cpp */,
+				010E412B1818748C00E75FC3 /* MIDILearnDialog.h */,
+				010E412C1818748C00E75FC3 /* PresetControllerView.cc */,
+				010E412D1818748C00E75FC3 /* PresetControllerView.h */,
+				010E412E1818748C00E75FC3 /* Request.h */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		010E41331818748C00E75FC3 /* lv2 */ = {
+			isa = PBXGroup;
+			children = (
+				010E41341818748C00E75FC3 /* lv2plug.in */,
+			);
+			path = lv2;
+			sourceTree = "<group>";
+		};
+		010E41341818748C00E75FC3 /* lv2plug.in */ = {
+			isa = PBXGroup;
+			children = (
+				010E41351818748C00E75FC3 /* ns */,
+			);
+			path = lv2plug.in;
+			sourceTree = "<group>";
+		};
+		010E41351818748C00E75FC3 /* ns */ = {
+			isa = PBXGroup;
+			children = (
+				010E41361818748C00E75FC3 /* ext */,
+				010E415C1818748C00E75FC3 /* extensions */,
+				010E41611818748C00E75FC3 /* lv2core */,
+			);
+			path = ns;
+			sourceTree = "<group>";
+		};
+		010E41361818748C00E75FC3 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				010E41371818748C00E75FC3 /* atom */,
+				010E413B1818748C00E75FC3 /* data-access */,
+				010E413D1818748C00E75FC3 /* dynmanifest */,
+				010E413F1818748C00E75FC3 /* event */,
+				010E41421818748C00E75FC3 /* instance-access */,
+				010E41441818748C00E75FC3 /* log */,
+				010E41461818748C00E75FC3 /* midi */,
+				010E41481818748C00E75FC3 /* patch */,
+				010E414A1818748C00E75FC3 /* port-groups */,
+				010E414C1818748C00E75FC3 /* port-props */,
+				010E414E1818748C00E75FC3 /* presets */,
+				010E41501818748C00E75FC3 /* resize-port */,
+				010E41521818748C00E75FC3 /* state */,
+				010E41541818748C00E75FC3 /* time */,
+				010E41561818748C00E75FC3 /* uri-map */,
+				010E41581818748C00E75FC3 /* urid */,
+				010E415A1818748C00E75FC3 /* worker */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		010E41371818748C00E75FC3 /* atom */ = {
+			isa = PBXGroup;
+			children = (
+				010E41381818748C00E75FC3 /* atom.h */,
+				010E41391818748C00E75FC3 /* forge.h */,
+				010E413A1818748C00E75FC3 /* util.h */,
+			);
+			path = atom;
+			sourceTree = "<group>";
+		};
+		010E413B1818748C00E75FC3 /* data-access */ = {
+			isa = PBXGroup;
+			children = (
+				010E413C1818748C00E75FC3 /* data-access.h */,
+			);
+			path = "data-access";
+			sourceTree = "<group>";
+		};
+		010E413D1818748C00E75FC3 /* dynmanifest */ = {
+			isa = PBXGroup;
+			children = (
+				010E413E1818748C00E75FC3 /* dynmanifest.h */,
+			);
+			path = dynmanifest;
+			sourceTree = "<group>";
+		};
+		010E413F1818748C00E75FC3 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				010E41401818748C00E75FC3 /* event-helpers.h */,
+				010E41411818748C00E75FC3 /* event.h */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		010E41421818748C00E75FC3 /* instance-access */ = {
+			isa = PBXGroup;
+			children = (
+				010E41431818748C00E75FC3 /* instance-access.h */,
+			);
+			path = "instance-access";
+			sourceTree = "<group>";
+		};
+		010E41441818748C00E75FC3 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				010E41451818748C00E75FC3 /* log.h */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		010E41461818748C00E75FC3 /* midi */ = {
+			isa = PBXGroup;
+			children = (
+				010E41471818748C00E75FC3 /* midi.h */,
+			);
+			path = midi;
+			sourceTree = "<group>";
+		};
+		010E41481818748C00E75FC3 /* patch */ = {
+			isa = PBXGroup;
+			children = (
+				010E41491818748C00E75FC3 /* patch.h */,
+			);
+			path = patch;
+			sourceTree = "<group>";
+		};
+		010E414A1818748C00E75FC3 /* port-groups */ = {
+			isa = PBXGroup;
+			children = (
+				010E414B1818748C00E75FC3 /* port-groups.h */,
+			);
+			path = "port-groups";
+			sourceTree = "<group>";
+		};
+		010E414C1818748C00E75FC3 /* port-props */ = {
+			isa = PBXGroup;
+			children = (
+				010E414D1818748C00E75FC3 /* port-props.h */,
+			);
+			path = "port-props";
+			sourceTree = "<group>";
+		};
+		010E414E1818748C00E75FC3 /* presets */ = {
+			isa = PBXGroup;
+			children = (
+				010E414F1818748C00E75FC3 /* presets.h */,
+			);
+			path = presets;
+			sourceTree = "<group>";
+		};
+		010E41501818748C00E75FC3 /* resize-port */ = {
+			isa = PBXGroup;
+			children = (
+				010E41511818748C00E75FC3 /* resize-port.h */,
+			);
+			path = "resize-port";
+			sourceTree = "<group>";
+		};
+		010E41521818748C00E75FC3 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				010E41531818748C00E75FC3 /* state.h */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		010E41541818748C00E75FC3 /* time */ = {
+			isa = PBXGroup;
+			children = (
+				010E41551818748C00E75FC3 /* time.h */,
+			);
+			path = time;
+			sourceTree = "<group>";
+		};
+		010E41561818748C00E75FC3 /* uri-map */ = {
+			isa = PBXGroup;
+			children = (
+				010E41571818748C00E75FC3 /* uri-map.h */,
+			);
+			path = "uri-map";
+			sourceTree = "<group>";
+		};
+		010E41581818748C00E75FC3 /* urid */ = {
+			isa = PBXGroup;
+			children = (
+				010E41591818748C00E75FC3 /* urid.h */,
+			);
+			path = urid;
+			sourceTree = "<group>";
+		};
+		010E415A1818748C00E75FC3 /* worker */ = {
+			isa = PBXGroup;
+			children = (
+				010E415B1818748C00E75FC3 /* worker.h */,
+			);
+			path = worker;
+			sourceTree = "<group>";
+		};
+		010E415C1818748C00E75FC3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				010E415D1818748C00E75FC3 /* ui */,
+				010E415F1818748C00E75FC3 /* units */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		010E415D1818748C00E75FC3 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				010E415E1818748C00E75FC3 /* ui.h */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		010E415F1818748C00E75FC3 /* units */ = {
+			isa = PBXGroup;
+			children = (
+				010E41601818748C00E75FC3 /* units.h */,
+			);
+			path = units;
+			sourceTree = "<group>";
+		};
+		010E41611818748C00E75FC3 /* lv2core */ = {
+			isa = PBXGroup;
+			children = (
+				010E41621818748C00E75FC3 /* lv2.h */,
+			);
+			path = lv2core;
+			sourceTree = "<group>";
+		};
+		010E41751818748C00E75FC3 /* VoiceBoard */ = {
+			isa = PBXGroup;
+			children = (
+				010E41761818748C00E75FC3 /* ADSR.cc */,
+				010E41771818748C00E75FC3 /* ADSR.h */,
+				010E41781818748C00E75FC3 /* config.h.in */,
+				010E41791818748C00E75FC3 /* LowPassFilter.cc */,
+				010E417A1818748C00E75FC3 /* LowPassFilter.h */,
+				010E417B1818748C00E75FC3 /* Makefile.am */,
+				010E417C1818748C00E75FC3 /* Oscillator.cc */,
+				010E417D1818748C00E75FC3 /* Oscillator.h */,
+				010E417E1818748C00E75FC3 /* Synth--.h */,
+				010E417F1818748C00E75FC3 /* VoiceBoard.cc */,
+				010E41801818748C00E75FC3 /* VoiceBoard.h */,
+			);
+			path = VoiceBoard;
+			sourceTree = "<group>";
+		};
 		01ED9664174783D9007DA00F = {
 			isa = PBXGroup;
 			children = (
 				01ED9676174783D9007DA00F /* amsynth */,
+				010E409D1818748C00E75FC3 /* Submodules */,
 				01ED966F174783D9007DA00F /* Frameworks */,
 				01ED966E174783D9007DA00F /* Products */,
 			);
@@ -152,7 +642,6 @@
 			children = (
 				01ED967F174783D9007DA00F /* AppDelegate.h */,
 				01ED9680174783D9007DA00F /* AppDelegate.m */,
-				01ED968D174784C2007DA00F /* src */,
 				01ED9677174783D9007DA00F /* Supporting Files */,
 				01ED97B217478588007DA00F /* SynthHoster.h */,
 				01ED97B317478588007DA00F /* SynthHoster.mm */,
@@ -177,70 +666,6 @@
 				01ED967C174783D9007DA00F /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		01ED968D174784C2007DA00F /* src */ = {
-			isa = PBXGroup;
-			children = (
-				01ED96DB174784C2007DA00F /* Config.cc */,
-				01ED96DC174784C2007DA00F /* Config.h */,
-				01ED96DD174784C2007DA00F /* controls.h */,
-				01ED9707174784C2007DA00F /* Effects */,
-				01ED978B174784C2007DA00F /* midi.h */,
-				01ED978C174784C2007DA00F /* MidiController.cc */,
-				01ED978D174784C2007DA00F /* MidiController.h */,
-				01ED978E174784C2007DA00F /* Parameter.cc */,
-				01ED978F174784C2007DA00F /* Parameter.h */,
-				01ED9790174784C2007DA00F /* Preset.cc */,
-				01ED9791174784C2007DA00F /* Preset.h */,
-				01ED9792174784C2007DA00F /* PresetController.cc */,
-				01ED9793174784C2007DA00F /* PresetController.h */,
-				01ED9795174784C2007DA00F /* TuningMap.cc */,
-				01ED9796174784C2007DA00F /* TuningMap.h */,
-				01ED9797174784C2007DA00F /* UpdateListener.h */,
-				01ED9798174784C2007DA00F /* VoiceAllocationUnit.cc */,
-				01ED9799174784C2007DA00F /* VoiceAllocationUnit.h */,
-				01ED979A174784C2007DA00F /* VoiceBoard */,
-			);
-			name = src;
-			path = "../../amsynth-osx/amsynth/src";
-			sourceTree = "<group>";
-		};
-		01ED9707174784C2007DA00F /* Effects */ = {
-			isa = PBXGroup;
-			children = (
-				01ED970E174784C2007DA00F /* allpass.cpp */,
-				01ED970F174784C2007DA00F /* allpass.hpp */,
-				01ED9711174784C2007DA00F /* comb.cpp */,
-				01ED9712174784C2007DA00F /* comb.hpp */,
-				01ED9714174784C2007DA00F /* denormal_test.cpp */,
-				01ED9715174784C2007DA00F /* denormals.h */,
-				01ED9716174784C2007DA00F /* Distortion.cc */,
-				01ED9717174784C2007DA00F /* Distortion.h */,
-				01ED971D174784C2007DA00F /* reverb_test.cpp */,
-				01ED971E174784C2007DA00F /* revmodel.cpp */,
-				01ED971F174784C2007DA00F /* revmodel.hpp */,
-				01ED9721174784C2007DA00F /* SoftLimiter.cc */,
-				01ED9722174784C2007DA00F /* SoftLimiter.h */,
-				01ED9724174784C2007DA00F /* tuning.h */,
-			);
-			path = Effects;
-			sourceTree = "<group>";
-		};
-		01ED979A174784C2007DA00F /* VoiceBoard */ = {
-			isa = PBXGroup;
-			children = (
-				01ED97A0174784C2007DA00F /* ADSR.cc */,
-				01ED97A1174784C2007DA00F /* ADSR.h */,
-				01ED97A5174784C2007DA00F /* LowPassFilter.cc */,
-				01ED97A6174784C2007DA00F /* LowPassFilter.h */,
-				01ED97AB174784C2007DA00F /* Oscillator.cc */,
-				01ED97AC174784C2007DA00F /* Oscillator.h */,
-				01ED97AE174784C2007DA00F /* Synth--.h */,
-				01ED97AF174784C2007DA00F /* VoiceBoard.cc */,
-				01ED97B0174784C2007DA00F /* VoiceBoard.h */,
-			);
-			path = VoiceBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,26 +736,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010E418F1818754D00E75FC3 /* LowPassFilter.cc in Sources */,
+				010E41921818755700E75FC3 /* Parameter.cc in Sources */,
+				010E418C1818754200E75FC3 /* SoftLimiter.cc in Sources */,
+				010E41931818755700E75FC3 /* Preset.cc in Sources */,
+				010E418D1818754900E75FC3 /* VoiceAllocationUnit.cc in Sources */,
+				010E418A1818754200E75FC3 /* Distortion.cc in Sources */,
+				010E4187181874CB00E75FC3 /* PresetController.cc in Sources */,
+				010E41901818754D00E75FC3 /* Oscillator.cc in Sources */,
 				01ED967D174783D9007DA00F /* main.m in Sources */,
+				010E418B1818754200E75FC3 /* revmodel.cpp in Sources */,
 				01ED9681174783D9007DA00F /* AppDelegate.m in Sources */,
 				01ED97B417478588007DA00F /* SynthHoster.mm in Sources */,
-				01ED97B717478941007DA00F /* Config.cc in Sources */,
-				01ED97B817478941007DA00F /* allpass.cpp in Sources */,
-				01ED97B917478941007DA00F /* comb.cpp in Sources */,
-				01ED97BA17478941007DA00F /* Distortion.cc in Sources */,
-				01ED97BB17478941007DA00F /* MidiController.cc in Sources */,
-				01ED97BC17478941007DA00F /* Parameter.cc in Sources */,
-				01ED97BD17478941007DA00F /* Preset.cc in Sources */,
-				01ED97BE17478941007DA00F /* PresetController.cc in Sources */,
-				01ED97BF17478941007DA00F /* TuningMap.cc in Sources */,
-				01ED97C017478941007DA00F /* VoiceAllocationUnit.cc in Sources */,
-				01ED97C117478941007DA00F /* ADSR.cc in Sources */,
-				01ED97C217478941007DA00F /* LowPassFilter.cc in Sources */,
-				01ED97C317478941007DA00F /* Oscillator.cc in Sources */,
-				01ED97C417478941007DA00F /* VoiceBoard.cc in Sources */,
-				01ED97C51747894F007DA00F /* revmodel.cpp in Sources */,
-				01ED97C61747894F007DA00F /* SoftLimiter.cc in Sources */,
+				010E41881818754200E75FC3 /* allpass.cpp in Sources */,
+				010E418E1818754D00E75FC3 /* ADSR.cc in Sources */,
 				01ED97CC17478D0C007DA00F /* MainViewController.m in Sources */,
+				010E41941818756300E75FC3 /* TuningMap.cc in Sources */,
+				010E41891818754200E75FC3 /* comb.cpp in Sources */,
+				010E41911818754D00E75FC3 /* VoiceBoard.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

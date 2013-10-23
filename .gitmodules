@@ -1,0 +1,3 @@
+[submodule "Submodules/amsynth"]
+	path = Submodules/amsynth
+	url = git@github.com:nixxcode/amsynth.git

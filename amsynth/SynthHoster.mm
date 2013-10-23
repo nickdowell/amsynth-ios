@@ -199,3 +199,10 @@ static OSStatus RenderCallback(void *inRefCon,
 
 	return noErr;
 }
+
+#pragma mark -
+
+std::string PresetController::getFactoryBanksDirectory()
+{
+	return std::string([[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"banks"] UTF8String]);
+}
