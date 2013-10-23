@@ -50,7 +50,7 @@ static OSStatus RenderCallback(void *inRefCon,
 		_bufferR = (float *)malloc(sizeof(float) * 4096);
 		_voiceAllocationUnit = new VoiceAllocationUnit();
 		_voiceAllocationUnit->SetSampleRate(44100);
-		_voiceAllocationUnit->SetMaxVoices(10);
+		_voiceAllocationUnit->SetMaxVoices(8);
 		std::vector<BankInfo> banks = PresetController::getPresetBanks();
 		NSMutableArray *names = [NSMutableArray array];
 		for (size_t i=0; i<banks.size(); i++) {
