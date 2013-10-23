@@ -21,7 +21,7 @@
 		010E41921818755700E75FC3 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
 		010E41931818755700E75FC3 /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416B1818748C00E75FC3 /* Preset.cc */; };
 		010E41941818756300E75FC3 /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41701818748C00E75FC3 /* TuningMap.cc */; };
-		011B945817479CA000ABA17F /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 011B945717479CA000ABA17F /* banks */; };
+		01E27F1018187D79004A359A /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 01E27F0F18187D79004A359A /* banks */; };
 		01ED9671174783D9007DA00F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9670174783D9007DA00F /* UIKit.framework */; };
 		01ED9673174783D9007DA00F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9672174783D9007DA00F /* Foundation.framework */; };
 		01ED9675174783D9007DA00F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9674174783D9007DA00F /* CoreGraphics.framework */; };
@@ -160,7 +160,7 @@
 		010E417E1818748C00E75FC3 /* Synth--.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Synth--.h"; sourceTree = "<group>"; };
 		010E417F1818748C00E75FC3 /* VoiceBoard.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceBoard.cc; sourceTree = "<group>"; };
 		010E41801818748C00E75FC3 /* VoiceBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceBoard.h; sourceTree = "<group>"; };
-		011B945717479CA000ABA17F /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = banks; path = "../../../amsynth-osx/amsynth/banks"; sourceTree = "<group>"; };
+		01E27F0F18187D79004A359A /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = banks; sourceTree = "<group>"; };
 		01ED966D174783D9007DA00F /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ED9670174783D9007DA00F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		01ED9672174783D9007DA00F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -209,7 +209,7 @@
 		010E409E1818748C00E75FC3 /* amsynth */ = {
 			isa = PBXGroup;
 			children = (
-				011B945717479CA000ABA17F /* banks */,
+				01E27F0F18187D79004A359A /* banks */,
 				010E40EA1818748C00E75FC3 /* src */,
 			);
 			path = amsynth;
@@ -689,9 +689,9 @@
 				01ED9683174783D9007DA00F /* Default.png in Resources */,
 				01ED9685174783D9007DA00F /* Default@2x.png in Resources */,
 				01ED9687174783D9007DA00F /* Default-568h@2x.png in Resources */,
+				01E27F1018187D79004A359A /* banks in Resources */,
 				01ED97CD17478D0C007DA00F /* MainViewController.xib in Resources */,
 				01ED97D5174792A8007DA00F /* Icon-72.png in Resources */,
-				011B945817479CA000ABA17F /* banks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
