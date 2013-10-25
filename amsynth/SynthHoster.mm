@@ -36,6 +36,7 @@ static OSStatus RenderCallback(void *inRefCon,
 	float *_bufferR;
 	PresetController *_presetController;
 	VoiceAllocationUnit *_voiceAllocationUnit;
+	NSMutableSet *_notesPlaying;
 }
 
 @end
@@ -62,6 +63,7 @@ static OSStatus RenderCallback(void *inRefCon,
 		_presetController->getCurrentPreset().AddListenerToAll(_voiceAllocationUnit);
 		_presetController->selectPreset(0);
 		[self updatePresetNames];
+		_notesPlaying = [NSMutableSet set];
 	}
 	return self;
 }
@@ -81,11 +83,13 @@ static OSStatus RenderCallback(void *inRefCon,
 - (void)noteDown:(NSUInteger)note velocity:(float)velocity
 {
 	_voiceAllocationUnit->HandleMidiNoteOn(note, velocity);
+	[_notesPlaying addObject:@(note)];
 }
 
 - (void)noteUp:(NSUInteger)note velocity:(float)velocity
 {
 	_voiceAllocationUnit->HandleMidiNoteOff(note, velocity);
+	[_notesPlaying removeObject:@(note)];
 }
 
 - (void)setCurrentBankIndex:(NSUInteger)currentBankIndex
@@ -102,6 +106,8 @@ static OSStatus RenderCallback(void *inRefCon,
 	_currentPresetIndex = currentPresetIndex;
 	_voiceAllocationUnit->HandleMidiAllSoundOff();
 	_presetController->selectPreset(currentPresetIndex);
+	for (NSNumber *note in _notesPlaying)
+		_voiceAllocationUnit->HandleMidiNoteOn([note intValue], 1);
 }
 
 - (void)updatePresetNames
