@@ -91,8 +91,9 @@
 {
 	if (tableView == self.banksTableView) {
 		self.synthHoster.currentBankIndex = [indexPath row];
+		NSIndexPath *presetIndexPath = [self.presetsTableView indexPathForSelectedRow];
 		[self.presetsTableView reloadData];
-		[self.presetsTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+		[self.presetsTableView selectRowAtIndexPath:presetIndexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 	}
 	if (tableView == self.presetsTableView) {
 		self.synthHoster.currentPresetIndex = [indexPath row];
