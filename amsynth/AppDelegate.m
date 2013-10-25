@@ -28,7 +28,7 @@
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 	navigationController.navigationBar.barStyle = UIBarStyleBlack;
 #ifdef __IPHONE_7_0
-	if ([navigationController respondsToSelector:@selector(setTranslucent:)])
+	if ([navigationController.navigationBar respondsToSelector:@selector(setTranslucent:)])
 		navigationController.navigationBar.translucent = NO;
 #endif
 

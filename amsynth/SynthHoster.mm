@@ -93,6 +93,7 @@ static OSStatus RenderCallback(void *inRefCon,
 	_currentBankIndex = currentBankIndex;
 	std::vector<BankInfo> banks = PresetController::getPresetBanks();
 	_presetController->loadPresets(banks[currentBankIndex].file_path.c_str());
+	_presetController->selectPreset(_currentPresetIndex);
 	[self updatePresetNames];
 }
 
