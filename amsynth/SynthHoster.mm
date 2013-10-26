@@ -45,6 +45,11 @@ static OSStatus RenderCallback(void *inRefCon,
 
 - (id)init
 {
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		PresetController::setFactoryBanksDirectory(std::string([[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"banks"] UTF8String]));
+	});
+
 	if ((self = [super init])) {
 		_audioUnit = CreateAudioUnit((__bridge void *)(self));
 		_bufferL = (float *)malloc(sizeof(float) * 4096);
@@ -53,6 +58,7 @@ static OSStatus RenderCallback(void *inRefCon,
 		_voiceAllocationUnit->SetSampleRate(44100);
 		_voiceAllocationUnit->SetMaxVoices(8);
 		std::vector<BankInfo> banks = PresetController::getPresetBanks();
+		NSParameterAssert(0 < banks.size());
 		NSMutableArray *names = [NSMutableArray array];
 		for (size_t i=0; i<banks.size(); i++) {
 			[names addObject:[NSString stringWithFormat:@"[%s] %s", banks[i].read_only ? "factory" : "user", banks[i].name.c_str()]];
@@ -205,11 +211,4 @@ static OSStatus RenderCallback(void *inRefCon,
 	}
 
 	return noErr;
-}
-
-#pragma mark -
-
-std::string PresetController::getFactoryBanksDirectory()
-{
-	return std::string([[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"banks"] UTF8String]);
 }
