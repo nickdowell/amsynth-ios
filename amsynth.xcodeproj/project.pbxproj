@@ -21,6 +21,35 @@
 		010E41921818755700E75FC3 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
 		010E41931818755700E75FC3 /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416B1818748C00E75FC3 /* Preset.cc */; };
 		010E41941818756300E75FC3 /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41701818748C00E75FC3 /* TuningMap.cc */; };
+		019F638618410EAC003E9089 /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41791818748C00E75FC3 /* LowPassFilter.cc */; };
+		019F638718410EAC003E9089 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
+		019F638818410EAC003E9089 /* SoftLimiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41151818748C00E75FC3 /* SoftLimiter.cc */; };
+		019F638918410EAC003E9089 /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416B1818748C00E75FC3 /* Preset.cc */; };
+		019F638A18410EAC003E9089 /* VoiceAllocationUnit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41731818748C00E75FC3 /* VoiceAllocationUnit.cc */; };
+		019F638B18410EAC003E9089 /* Distortion.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E410F1818748C00E75FC3 /* Distortion.cc */; };
+		019F638C18410EAC003E9089 /* PresetController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416D1818748C00E75FC3 /* PresetController.cc */; };
+		019F638D18410EAC003E9089 /* Oscillator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417C1818748C00E75FC3 /* Oscillator.cc */; };
+		019F638E18410EAC003E9089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED967C174783D9007DA00F /* main.m */; };
+		019F638F18410EAC003E9089 /* revmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41131818748C00E75FC3 /* revmodel.cpp */; };
+		019F639018410EAC003E9089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED9680174783D9007DA00F /* AppDelegate.m */; };
+		019F639118410EAC003E9089 /* SynthHoster.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97B317478588007DA00F /* SynthHoster.mm */; };
+		019F639218410EAC003E9089 /* allpass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41091818748C00E75FC3 /* allpass.cpp */; };
+		019F639318410EAC003E9089 /* ADSR.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41761818748C00E75FC3 /* ADSR.cc */; };
+		019F639418410EAC003E9089 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED97CA17478D0C007DA00F /* MainViewController.m */; };
+		019F639518410EAC003E9089 /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41701818748C00E75FC3 /* TuningMap.cc */; };
+		019F639618410EAC003E9089 /* comb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E410B1818748C00E75FC3 /* comb.cpp */; };
+		019F639718410EAC003E9089 /* VoiceBoard.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417F1818748C00E75FC3 /* VoiceBoard.cc */; };
+		019F639918410EAC003E9089 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED97B5174785EC007DA00F /* AudioToolbox.framework */; };
+		019F639A18410EAC003E9089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9670174783D9007DA00F /* UIKit.framework */; };
+		019F639B18410EAC003E9089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9672174783D9007DA00F /* Foundation.framework */; };
+		019F639C18410EAC003E9089 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9674174783D9007DA00F /* CoreGraphics.framework */; };
+		019F639E18410EAC003E9089 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01ED9679174783D9007DA00F /* InfoPlist.strings */; };
+		019F639F18410EAC003E9089 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED9682174783D9007DA00F /* Default.png */; };
+		019F63A018410EAC003E9089 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED9684174783D9007DA00F /* Default@2x.png */; };
+		019F63A118410EAC003E9089 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED9686174783D9007DA00F /* Default-568h@2x.png */; };
+		019F63A218410EAC003E9089 /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 01E27F0F18187D79004A359A /* banks */; };
+		019F63A318410EAC003E9089 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97CB17478D0C007DA00F /* MainViewController.xib */; };
+		019F63A418410EAC003E9089 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97D4174792A8007DA00F /* Icon-72.png */; };
 		01E27F1018187D79004A359A /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 01E27F0F18187D79004A359A /* banks */; };
 		01ED9671174783D9007DA00F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9670174783D9007DA00F /* UIKit.framework */; };
 		01ED9673174783D9007DA00F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9672174783D9007DA00F /* Foundation.framework */; };
@@ -160,6 +189,8 @@
 		010E417E1818748C00E75FC3 /* Synth--.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Synth--.h"; sourceTree = "<group>"; };
 		010E417F1818748C00E75FC3 /* VoiceBoard.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceBoard.cc; sourceTree = "<group>"; };
 		010E41801818748C00E75FC3 /* VoiceBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceBoard.h; sourceTree = "<group>"; };
+		019F63A818410EAC003E9089 /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		019F63B5184111F3003E9089 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
 		01E27F0F18187D79004A359A /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = banks; sourceTree = "<group>"; };
 		01ED966D174783D9007DA00F /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ED9670174783D9007DA00F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -184,6 +215,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		019F639818410EAC003E9089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019F639918410EAC003E9089 /* AudioToolbox.framework in Frameworks */,
+				019F639A18410EAC003E9089 /* UIKit.framework in Frameworks */,
+				019F639B18410EAC003E9089 /* Foundation.framework in Frameworks */,
+				019F639C18410EAC003E9089 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01ED966A174783D9007DA00F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,10 +617,43 @@
 			path = VoiceBoard;
 			sourceTree = "<group>";
 		};
+		019F63B0184111F3003E9089 /* amsynth-cydia */ = {
+			isa = PBXGroup;
+			children = (
+				019F63B1184111F3003E9089 /* Package */,
+			);
+			path = "amsynth-cydia";
+			sourceTree = "<group>";
+		};
+		019F63B1184111F3003E9089 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				019F63B2184111F3003E9089 /* Applications */,
+				019F63B4184111F3003E9089 /* DEBIAN */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		019F63B2184111F3003E9089 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		019F63B4184111F3003E9089 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				019F63B5184111F3003E9089 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
 		01ED9664174783D9007DA00F = {
 			isa = PBXGroup;
 			children = (
 				01ED9676174783D9007DA00F /* amsynth */,
+				019F63B0184111F3003E9089 /* amsynth-cydia */,
 				010E409D1818748C00E75FC3 /* Submodules */,
 				01ED966F174783D9007DA00F /* Frameworks */,
 				01ED966E174783D9007DA00F /* Products */,
@@ -589,6 +664,7 @@
 			isa = PBXGroup;
 			children = (
 				01ED966D174783D9007DA00F /* amsynth.app */,
+				019F63A818410EAC003E9089 /* amsynth.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -637,6 +713,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		019F638418410EAC003E9089 /* amsynth-cydia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019F63A518410EAC003E9089 /* Build configuration list for PBXNativeTarget "amsynth-cydia" */;
+			buildPhases = (
+				019F638518410EAC003E9089 /* Sources */,
+				019F639818410EAC003E9089 /* Frameworks */,
+				019F639D18410EAC003E9089 /* Resources */,
+				019F63AF18411000003E9089 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "amsynth-cydia";
+			productName = amsynth;
+			productReference = 019F63A818410EAC003E9089 /* amsynth.app */;
+			productType = "com.apple.product-type.application";
+		};
 		01ED966C174783D9007DA00F /* amsynth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01ED968A174783D9007DA00F /* Build configuration list for PBXNativeTarget "amsynth" */;
@@ -676,11 +770,26 @@
 			projectRoot = "";
 			targets = (
 				01ED966C174783D9007DA00F /* amsynth */,
+				019F638418410EAC003E9089 /* amsynth-cydia */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		019F639D18410EAC003E9089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019F639E18410EAC003E9089 /* InfoPlist.strings in Resources */,
+				019F639F18410EAC003E9089 /* Default.png in Resources */,
+				019F63A018410EAC003E9089 /* Default@2x.png in Resources */,
+				019F63A118410EAC003E9089 /* Default-568h@2x.png in Resources */,
+				019F63A218410EAC003E9089 /* banks in Resources */,
+				019F63A318410EAC003E9089 /* MainViewController.xib in Resources */,
+				019F63A418410EAC003E9089 /* Icon-72.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01ED966B174783D9007DA00F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -697,7 +806,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		019F63AF18411000003E9089 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		019F638518410EAC003E9089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019F638618410EAC003E9089 /* LowPassFilter.cc in Sources */,
+				019F638718410EAC003E9089 /* Parameter.cc in Sources */,
+				019F638818410EAC003E9089 /* SoftLimiter.cc in Sources */,
+				019F638918410EAC003E9089 /* Preset.cc in Sources */,
+				019F638A18410EAC003E9089 /* VoiceAllocationUnit.cc in Sources */,
+				019F638B18410EAC003E9089 /* Distortion.cc in Sources */,
+				019F638C18410EAC003E9089 /* PresetController.cc in Sources */,
+				019F638D18410EAC003E9089 /* Oscillator.cc in Sources */,
+				019F638E18410EAC003E9089 /* main.m in Sources */,
+				019F638F18410EAC003E9089 /* revmodel.cpp in Sources */,
+				019F639018410EAC003E9089 /* AppDelegate.m in Sources */,
+				019F639118410EAC003E9089 /* SynthHoster.mm in Sources */,
+				019F639218410EAC003E9089 /* allpass.cpp in Sources */,
+				019F639318410EAC003E9089 /* ADSR.cc in Sources */,
+				019F639418410EAC003E9089 /* MainViewController.m in Sources */,
+				019F639518410EAC003E9089 /* TuningMap.cc in Sources */,
+				019F639618410EAC003E9089 /* comb.cpp in Sources */,
+				019F639718410EAC003E9089 /* VoiceBoard.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01ED9669174783D9007DA00F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,6 +887,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		019F63A618410EAC003E9089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "amsynth/amsynth-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/amsynth/amsynth-Info.plist";
+				PRODUCT_NAME = amsynth;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+			};
+			name = Debug;
+		};
+		019F63A718410EAC003E9089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "amsynth/amsynth-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/amsynth/amsynth-Info.plist";
+				PRODUCT_NAME = amsynth;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+			};
+			name = Release;
+		};
 		01ED9688174783D9007DA00F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -824,6 +1004,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		019F63A518410EAC003E9089 /* Build configuration list for PBXNativeTarget "amsynth-cydia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019F63A618410EAC003E9089 /* Debug */,
+				019F63A718410EAC003E9089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01ED9668174783D9007DA00F /* Build configuration list for PBXProject "amsynth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

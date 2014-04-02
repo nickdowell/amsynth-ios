@@ -1,0 +1,17 @@
+Package: com.nickdowell.amsynth
+Name: amsynth
+Version: 0.1
+Description: 
+Section: System
+Depends: firmware (>= 5.1)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Nick Nowell
+dev: Nick Nowell
+Homepage: http://code.google.com/p/amsynth/
+Depiction: 
+Maintainer: Nick Dowell
+Icon: 
+
