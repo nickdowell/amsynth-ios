@@ -7,20 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010E4187181874CB00E75FC3 /* PresetController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416D1818748C00E75FC3 /* PresetController.cc */; };
-		010E41881818754200E75FC3 /* allpass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41091818748C00E75FC3 /* allpass.cpp */; };
-		010E41891818754200E75FC3 /* comb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E410B1818748C00E75FC3 /* comb.cpp */; };
-		010E418A1818754200E75FC3 /* Distortion.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E410F1818748C00E75FC3 /* Distortion.cc */; };
-		010E418B1818754200E75FC3 /* revmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41131818748C00E75FC3 /* revmodel.cpp */; };
-		010E418C1818754200E75FC3 /* SoftLimiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41151818748C00E75FC3 /* SoftLimiter.cc */; };
-		010E418D1818754900E75FC3 /* VoiceAllocationUnit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41731818748C00E75FC3 /* VoiceAllocationUnit.cc */; };
-		010E418E1818754D00E75FC3 /* ADSR.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41761818748C00E75FC3 /* ADSR.cc */; };
-		010E418F1818754D00E75FC3 /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41791818748C00E75FC3 /* LowPassFilter.cc */; };
-		010E41901818754D00E75FC3 /* Oscillator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417C1818748C00E75FC3 /* Oscillator.cc */; };
-		010E41911818754D00E75FC3 /* VoiceBoard.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417F1818748C00E75FC3 /* VoiceBoard.cc */; };
-		010E41921818755700E75FC3 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
-		010E41931818755700E75FC3 /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416B1818748C00E75FC3 /* Preset.cc */; };
-		010E41941818756300E75FC3 /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41701818748C00E75FC3 /* TuningMap.cc */; };
 		019F638618410EAC003E9089 /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41791818748C00E75FC3 /* LowPassFilter.cc */; };
 		019F638718410EAC003E9089 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
 		019F638818410EAC003E9089 /* SoftLimiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41151818748C00E75FC3 /* SoftLimiter.cc */; };
@@ -50,6 +36,22 @@
 		019F63A218410EAC003E9089 /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 01E27F0F18187D79004A359A /* banks */; };
 		019F63A318410EAC003E9089 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97CB17478D0C007DA00F /* MainViewController.xib */; };
 		019F63A418410EAC003E9089 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97D4174792A8007DA00F /* Icon-72.png */; };
+		01D79E2818EC8DF300298C99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9672174783D9007DA00F /* Foundation.framework */; };
+		01D79E4A18EC8ECB00298C99 /* Parameter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41691818748C00E75FC3 /* Parameter.cc */; };
+		01D79E4B18EC8ECB00298C99 /* Preset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416B1818748C00E75FC3 /* Preset.cc */; };
+		01D79E4C18EC8ECB00298C99 /* PresetController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E416D1818748C00E75FC3 /* PresetController.cc */; };
+		01D79E4D18EC8ECB00298C99 /* VoiceAllocationUnit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41731818748C00E75FC3 /* VoiceAllocationUnit.cc */; };
+		01D79E4E18EC8F0100298C99 /* libamsynth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D79E2718EC8DF300298C99 /* libamsynth.a */; };
+		01D79E5118EC8F5300298C99 /* ADSR.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41761818748C00E75FC3 /* ADSR.cc */; };
+		01D79E5218EC8F5300298C99 /* LowPassFilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41791818748C00E75FC3 /* LowPassFilter.cc */; };
+		01D79E5318EC8F5300298C99 /* Oscillator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417C1818748C00E75FC3 /* Oscillator.cc */; };
+		01D79E5418EC8F5300298C99 /* VoiceBoard.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E417F1818748C00E75FC3 /* VoiceBoard.cc */; };
+		01D79E5518EC8F6900298C99 /* allpass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41091818748C00E75FC3 /* allpass.cpp */; };
+		01D79E5618EC8F6900298C99 /* comb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E410B1818748C00E75FC3 /* comb.cpp */; };
+		01D79E5718EC8F6900298C99 /* Distortion.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E410F1818748C00E75FC3 /* Distortion.cc */; };
+		01D79E5818EC8F6900298C99 /* revmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 010E41131818748C00E75FC3 /* revmodel.cpp */; };
+		01D79E5918EC8F6900298C99 /* SoftLimiter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41151818748C00E75FC3 /* SoftLimiter.cc */; };
+		01D79E5A18EC8F7500298C99 /* TuningMap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 010E41701818748C00E75FC3 /* TuningMap.cc */; };
 		01E27F1018187D79004A359A /* banks in Resources */ = {isa = PBXBuildFile; fileRef = 01E27F0F18187D79004A359A /* banks */; };
 		01ED9671174783D9007DA00F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9670174783D9007DA00F /* UIKit.framework */; };
 		01ED9673174783D9007DA00F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ED9672174783D9007DA00F /* Foundation.framework */; };
@@ -66,6 +68,28 @@
 		01ED97CD17478D0C007DA00F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97CB17478D0C007DA00F /* MainViewController.xib */; };
 		01ED97D5174792A8007DA00F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ED97D4174792A8007DA00F /* Icon-72.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D79E4F18EC8F3F00298C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01ED9665174783D9007DA00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D79E2618EC8DF300298C99;
+			remoteInfo = libamsynth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01D79E2518EC8DF300298C99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		010E40EB1818748C00E75FC3 /* amsynth_dssi_gui.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = amsynth_dssi_gui.c; sourceTree = "<group>"; };
@@ -191,6 +215,8 @@
 		010E41801818748C00E75FC3 /* VoiceBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceBoard.h; sourceTree = "<group>"; };
 		019F63A818410EAC003E9089 /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019F63B5184111F3003E9089 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		01D79E2718EC8DF300298C99 /* libamsynth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libamsynth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D79E3518EC8DF300298C99 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		01E27F0F18187D79004A359A /* banks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = banks; sourceTree = "<group>"; };
 		01ED966D174783D9007DA00F /* amsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ED9670174783D9007DA00F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -226,10 +252,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01D79E2418EC8DF300298C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D79E2818EC8DF300298C99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01ED966A174783D9007DA00F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D79E4E18EC8F0100298C99 /* libamsynth.a in Frameworks */,
 				01ED97B6174785EC007DA00F /* AudioToolbox.framework in Frameworks */,
 				01ED9671174783D9007DA00F /* UIKit.framework in Frameworks */,
 				01ED9673174783D9007DA00F /* Foundation.framework in Frameworks */,
@@ -665,6 +700,7 @@
 			children = (
 				01ED966D174783D9007DA00F /* amsynth.app */,
 				019F63A818410EAC003E9089 /* amsynth.app */,
+				01D79E2718EC8DF300298C99 /* libamsynth.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -676,6 +712,7 @@
 				01ED9674174783D9007DA00F /* CoreGraphics.framework */,
 				01ED9672174783D9007DA00F /* Foundation.framework */,
 				01ED9670174783D9007DA00F /* UIKit.framework */,
+				01D79E3518EC8DF300298C99 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -731,6 +768,23 @@
 			productReference = 019F63A818410EAC003E9089 /* amsynth.app */;
 			productType = "com.apple.product-type.application";
 		};
+		01D79E2618EC8DF300298C99 /* libamsynth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D79E4818EC8DF300298C99 /* Build configuration list for PBXNativeTarget "libamsynth" */;
+			buildPhases = (
+				01D79E2318EC8DF300298C99 /* Sources */,
+				01D79E2418EC8DF300298C99 /* Frameworks */,
+				01D79E2518EC8DF300298C99 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libamsynth;
+			productName = libamsynth;
+			productReference = 01D79E2718EC8DF300298C99 /* libamsynth.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		01ED966C174783D9007DA00F /* amsynth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01ED968A174783D9007DA00F /* Build configuration list for PBXNativeTarget "amsynth" */;
@@ -742,6 +796,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				01D79E5018EC8F3F00298C99 /* PBXTargetDependency */,
 			);
 			name = amsynth;
 			productName = amsynth;
@@ -771,6 +826,7 @@
 			targets = (
 				01ED966C174783D9007DA00F /* amsynth */,
 				019F638418410EAC003E9089 /* amsynth-cydia */,
+				01D79E2618EC8DF300298C99 /* libamsynth */,
 			);
 		};
 /* End PBXProject section */
@@ -848,32 +904,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01D79E2318EC8DF300298C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D79E5718EC8F6900298C99 /* Distortion.cc in Sources */,
+				01D79E4B18EC8ECB00298C99 /* Preset.cc in Sources */,
+				01D79E5518EC8F6900298C99 /* allpass.cpp in Sources */,
+				01D79E5A18EC8F7500298C99 /* TuningMap.cc in Sources */,
+				01D79E5818EC8F6900298C99 /* revmodel.cpp in Sources */,
+				01D79E4A18EC8ECB00298C99 /* Parameter.cc in Sources */,
+				01D79E4D18EC8ECB00298C99 /* VoiceAllocationUnit.cc in Sources */,
+				01D79E4C18EC8ECB00298C99 /* PresetController.cc in Sources */,
+				01D79E5118EC8F5300298C99 /* ADSR.cc in Sources */,
+				01D79E5318EC8F5300298C99 /* Oscillator.cc in Sources */,
+				01D79E5218EC8F5300298C99 /* LowPassFilter.cc in Sources */,
+				01D79E5618EC8F6900298C99 /* comb.cpp in Sources */,
+				01D79E5918EC8F6900298C99 /* SoftLimiter.cc in Sources */,
+				01D79E5418EC8F5300298C99 /* VoiceBoard.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01ED9669174783D9007DA00F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				010E418F1818754D00E75FC3 /* LowPassFilter.cc in Sources */,
-				010E41921818755700E75FC3 /* Parameter.cc in Sources */,
-				010E418C1818754200E75FC3 /* SoftLimiter.cc in Sources */,
-				010E41931818755700E75FC3 /* Preset.cc in Sources */,
-				010E418D1818754900E75FC3 /* VoiceAllocationUnit.cc in Sources */,
-				010E418A1818754200E75FC3 /* Distortion.cc in Sources */,
-				010E4187181874CB00E75FC3 /* PresetController.cc in Sources */,
-				010E41901818754D00E75FC3 /* Oscillator.cc in Sources */,
 				01ED967D174783D9007DA00F /* main.m in Sources */,
-				010E418B1818754200E75FC3 /* revmodel.cpp in Sources */,
 				01ED9681174783D9007DA00F /* AppDelegate.m in Sources */,
 				01ED97B417478588007DA00F /* SynthHoster.mm in Sources */,
-				010E41881818754200E75FC3 /* allpass.cpp in Sources */,
-				010E418E1818754D00E75FC3 /* ADSR.cc in Sources */,
 				01ED97CC17478D0C007DA00F /* MainViewController.m in Sources */,
-				010E41941818756300E75FC3 /* TuningMap.cc in Sources */,
-				010E41891818754200E75FC3 /* comb.cpp in Sources */,
-				010E41911818754D00E75FC3 /* VoiceBoard.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01D79E5018EC8F3F00298C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D79E2618EC8DF300298C99 /* libamsynth */;
+			targetProxy = 01D79E4F18EC8F3F00298C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01ED9679174783D9007DA00F /* InfoPlist.strings */ = {
@@ -914,6 +985,24 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 				iOSOpenDevBuildPackageOnAnyBuild = YES;
+			};
+			name = Release;
+		};
+		01D79E4418EC8DF300298C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = s;
+				PRODUCT_NAME = amsynth;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		01D79E4518EC8DF300298C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = s;
+				PRODUCT_NAME = amsynth;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1012,6 +1101,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		01D79E4818EC8DF300298C99 /* Build configuration list for PBXNativeTarget "libamsynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D79E4418EC8DF300298C99 /* Debug */,
+				01D79E4518EC8DF300298C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		01ED9668174783D9007DA00F /* Build configuration list for PBXProject "amsynth" */ = {
 			isa = XCConfigurationList;
